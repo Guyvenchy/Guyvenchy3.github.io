@@ -1,24 +1,43 @@
 .card {
     margin: 24px;
-    border: 2px solid pink;
+    border: 1px solid pink;
     padding: 16px;
-    box-shadow: 3px 3px 7px;
+    box-shadow: 3px 3px 15px
 }
 
-#header
-{
-    margin: 24px solid pink;
-    background-color: palevioletred;
+#header {
+    margin: 10px solid salmon;
+    background-color: salmon;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 48px;
+    color: white;
 }
 
 body {
     margin: 0px;
-}
-
-#image_container {
-    float: right;
+    font-family: sans-serif;
 }
 
 #footer {
-    background-color: palevioletred;
+    background-color: salmon;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 10px;
+}
+
+body {
+    background-color: #f0f9ff;
 }

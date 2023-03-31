@@ -75,3 +75,12 @@ article {
 .flexbox_2 {
     display: flex;
 }
+.flexbox_3 {
+    margin-right: 20px;
+}
+h3{
+    font-size: medium;
+}
+h1 {
+    font-size: xx-large;
+}

@@ -1,0 +1,77 @@
+.wiki_image {
+    border: 1px solid #c9ccd1;
+    background-color:  #f8f9fa;
+    padding: 4px;
+    width: 220px;
+    margin: 12px;
+
+}
+.wiki_image_2 {
+    border: 1px solid #c9ccd1;
+    background-color:  #f8f9fa;
+    padding: 4px;
+    width: 220px;
+    margin: 12px;
+
+}
+.wiki_image_3 img {
+    height: 250px
+   
+}
+.wiki_image_5 img {
+    height: 204px;
+}
+.wiki_image_6 {
+    border: 1px solid #c9ccd1;
+    background-color:  #f8f9fa;
+    padding: 4px;
+    width: 285px;
+    margin: 12px;
+}
+.clear {
+    clear: both;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+div p {
+    font-size: 12px;
+}
+p {
+    font-size: 15px;
+}
+body {
+    margin: 50px;
+    background-color: #f8f9fa;
+}
+article {
+    background-color: white;
+    padding: 50px;
+}
+#image_container_3 {
+    border: 1px solid #c9ccd1;
+    background-color:  #f8f9fa;
+    padding: 4px;
+    width: 202px;
+    margin: 12px;
+}
+#image_container_5 {
+    border: 1px solid #c9ccd1;
+    background-color:  #f8f9fa;
+    padding: 4px;
+    width: 200px;
+    margin: 12px;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+.indent {
+    text-indent: 20pt;
+}
+.flexbox_2 {
+    display: flex;
+}

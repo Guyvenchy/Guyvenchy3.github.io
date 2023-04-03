@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+}
+nav {
+    background-color: blue;
+    padding: 16px;
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0px;
+    max-width: 800px;
+    margin: 0px auto;
+}
+ul li {
+    margin: 12px;
+}
+li a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+#home {
+    margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+}

@@ -1,10 +1,78 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+#footer {
+    background-color: #D8A46E;
+    text-align: center;
+    padding: 0px;
+    margin-top: auto;
+    height: 190px
+  }
+h4 {
+    margin: 0px auto;
+}
+div.container_1 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 36px;
+}
+div.container_2 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 36px;
+}
+div.container_3 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 36px;
+}
+img {
+    width: 200px;
+    height: 100px;
+    background-color: grey;
+}
+.caption {
+    display: block;
+}
+span {
+    font-size: small;
+}
 body{
     margin: 0px;
 }
 nav {
     background-color: #FED5AC;
+    top: 0px;
     border: solid #FED5AC;
     padding: 20px;
+}
+.navigation_bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 36px; /* change it to desired width */
+    background-color: #FED5AC; /* change to desired color */
+    position: sticky;
+}
+.logo {
+    display: inline-block;
+    vertical-align: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+}
+.navigation_bar a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 70px;
+    text-align: center;
 }
 ul {
     display: flex;
@@ -21,7 +89,8 @@ li a {
     color: white;
     font-family: sans-serif;
     text-decoration: none;
-    margin: 24px;
+    margin: 0px;
+    
 }
 .dropdown_container {
     position: relative;
@@ -59,3 +128,25 @@ li a {
         flex-direction: column;
     }
 }
+/* Desktop breakpoint*/
+@media screen and (min-width: 1280px) {
+    #tablet,
+    #mobile {
+        display: none;
+    }
+}
+/* Tablet breakpoint */
+@media screen and (max-width: 1279px)
+    and (min-width: 768px) {
+        #desktop,
+        #mobile {
+            display: none;
+        }
+    }
+/* Mobile breakpoint */
+    @media screen and (max-width: 767px) {
+        #desktop,
+        #tablet {
+            display: none;
+        }
+    }

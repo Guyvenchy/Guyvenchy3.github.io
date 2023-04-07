@@ -1,0 +1,18 @@
+main {
+    width: 800px;
+    margin: 24px auto;
+}
+.side_by_side {
+    display: flex;
+    align-items: center;
+    margin: 48px 24px;
+
+}
+.side_by_side img {
+    flex: 1; 
+    width: 50px;
+    border-radius: 75px 0px 75px 0px;
+}
+.side_by_side p {
+    flex: 1;
+}

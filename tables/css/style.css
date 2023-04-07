@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    
+}
+th {
+    padding: 12px;
+}
+
+tr{
+    border-bottom: 1px solid 
+    #c9ccd1;
+}
+thead tr {
+    background-color: #1eb961;
+    color: white; 
+}
+tbody tr:nth-child(even) {
+    background-color:
+    #f8f9fa;
+}
+table th:first-child {
+    border-radius: 5px 0 0 0 
+  }
+table th:last-child {
+    border-radius: 0 5px 0 0
+}
+table tr:hover td {
+    background-color: green;
+  }

@@ -1,0 +1,68 @@
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas: 
+        ". header_area ."
+        ". main_area .";
+}
+header {
+    grid-area: header_area;
+    text-align: center;
+}
+main {
+    grid-area: main_area;
+}
+body {
+    background-color: #fafafa;
+}
+form {
+    background-color: white;
+    border: 2px solid #cccccc;
+    padding: 36px;
+}
+.wcwhw select{
+    width: 30pc;
+    height: 2pc;
+    margin: 10px 0px 24px;
+}
+.name_input label {
+    display: block;
+}
+.name_input input {
+    width: 30pc;
+    height: 2pc;
+    margin: 10px 0px 24px;
+}
+.email_input label {
+    display: block;
+}
+.email_input input {
+    width: 30pc;
+    height: 2pc;
+    margin: 10px 0px 24px;
+}
+.message_id label {
+    display: block;
+}
+.message_id textarea {
+    width: 30pc;
+    height: 8pc;
+    margin: 10px 0px 0px;
+}
+.button {
+    margin: 12px 0px 0px;
+}
+.button input {
+    width: 48px;
+    height: 36px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(2, 112, 255);
+    color: white;
+    cursor: pointer;
+
+}
+.button input:hover {
+    background: linear-gradient(to bottom, rgb(36, 152, 253), rgb(2, 112, 255));
+}
+

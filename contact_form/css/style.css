@@ -5,6 +5,17 @@
         ". header_area ."
         ". main_area .";
 }
+p {
+    font-size: 12px;
+    margin-bottom: 75px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+div label {
+    font-size: 14px;
+}
 header {
     grid-area: header_area;
     text-align: center;
@@ -14,6 +25,7 @@ main {
 }
 body {
     background-color: #fafafa;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 form {
     background-color: white;
@@ -24,6 +36,7 @@ form {
     width: 30pc;
     height: 2pc;
     margin: 10px 0px 24px;
+    border: 2px solid #dbe0e5;
 }
 .name_input label {
     display: block;
@@ -32,6 +45,7 @@ form {
     width: 30pc;
     height: 2pc;
     margin: 10px 0px 24px;
+    border: 2px solid #dbe0e5;
 }
 .email_input label {
     display: block;
@@ -40,6 +54,7 @@ form {
     width: 30pc;
     height: 2pc;
     margin: 10px 0px 24px;
+    border: 2px solid #dbe0e5;
 }
 .message_id label {
     display: block;
@@ -48,6 +63,7 @@ form {
     width: 30pc;
     height: 8pc;
     margin: 10px 0px 0px;
+    border: 2px solid #dbe0e5;
 }
 .button {
     margin: 12px 0px 0px;
@@ -60,9 +76,29 @@ form {
     background: rgb(2, 112, 255);
     color: white;
     cursor: pointer;
-
 }
 .button input:hover {
     background: linear-gradient(to bottom, rgb(36, 152, 253), rgb(2, 112, 255));
 }
-
+/* Desktop breakpoint*/
+@media screen and (min-width: 1280px) {
+    #tablet,
+    #mobile {
+        display: none;
+    }
+}
+/* Tablet breakpoint */
+@media screen and (max-width: 1279px)
+    and (min-width: 768px) {
+        #desktop,
+        #mobile {
+            display: none;
+        }
+    }
+/* Mobile breakpoint */
+    @media screen and (max-width: 767px) {
+        #desktop,
+        #tablet {
+            display: none;
+        }
+    }

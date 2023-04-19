@@ -16,33 +16,49 @@
                 </p>
             </header>
             <main>
-                <form>
+                <form action="https://getform.io/f/ce397999-a9e0-4ff2-83da-135daf6c7b8d" method="POST">
                     <div class="wcwhw">
                         <b><label for="wcwhw_id">
                             What can we help you with?
                         </label></b>
                         <select id="wcwhw_id" name="wcwhw">
-                            <options value="fruits">Fruits</options>
-                            <options value="vegatables">Vegatables</options>
-                            <options value="meats">Meats</options>
-                            <options value="grains">Grains</options>
-                            <options value="dairy">Dairy</options>
+                            <option value="none" disabled selected>
+                                Select what we can help you with
+                            </option>
+                            <options value="coding">Coding</options>
+                            <options value="graphic_design">Graphic Design</options>
+                            <options value="web_development">Web Development</options>
+                            <options value="film_making">Film Making</options>
                         </select>
                     </div>
                     <div class="name_input">
                         <b><label for="name_id">Name</label></b>
-                        <input type="text" id="name_id" name="name">
+                        <input 
+                            type="text" 
+                            id="name_id" 
+                            name="name"
+                            required
+                            minlength="2"
+                            placeholder="E.g. Greg Adams">
                     </div>
                     <div class="email_input">
                         <b><label for="email_id">Email</label></b>
-                        <input type="text" id="email_id" name="email">
+                        <input 
+                            type="text" 
+                            id="email_id" 
+                            name="email"
+                            required
+                            minlength="2"
+                            placeholder="E.g. Youremail@gmail.com">
                     </div>
                     <div class="message_id">
                         <b><label for="message_id">Message</label></b>
                         <textarea
                             id="message_id"
                             name="message"
-                            placeholder="Type here">
+                            required
+                            max length="260"
+                            >
                         </textarea>
                     </div>
                     <div class="button">

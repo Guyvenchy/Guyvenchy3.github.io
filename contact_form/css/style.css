@@ -80,6 +80,10 @@ form {
 .button input:hover {
     background: linear-gradient(to bottom, rgb(36, 152, 253), rgb(2, 112, 255));
 }
+input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: lightcoral;
+    border: 2px solid red;
+}
 /* Desktop breakpoint*/
 @media screen and (min-width: 1280px) {
     #tablet,

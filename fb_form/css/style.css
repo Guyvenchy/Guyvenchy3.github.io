@@ -1,0 +1,29 @@
+.center {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+body {
+    background-color: #f1f2f5;
+}
+
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas: 
+        ". header_area ."
+        ". main_area .";
+    background-color:white;
+}
+header {
+    grid-area: header_area;
+    text-align: center;
+}
+main {
+    grid-area: main_area;
+}
+.full_name_input label {
+    display: block;
+    
+}

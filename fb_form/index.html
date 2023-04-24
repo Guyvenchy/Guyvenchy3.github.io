@@ -6,19 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Facebook Signup Form</title>
         <link href="css/style.css" rel="stylesheet">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Lobster&family=Montserrat&family=PT+Sans+Narrow&family=Raleway:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <body>
-        <section id="grid_container">
-            
-            <main>
-            <img src="images/fb_logo.svg" class="center">
-            <header>
-                <b><h1>Create a new account</h1></b>
-                <p>It's quick and easy.</p>
-            </header> 
-            
-               
+        <img src="images/fb_logo.svg" class="center">
+            <main> 
                 <form action="https://getform.io/f/ce397999-a9e0-4ff2-83da-135daf6c7b8d" method="POST">
+                <header>
+                    <h1 class="header">Create a new account</h1>
+                    <p class="header_1">It's quick and easy.</p>
+                    <hr>
+                </header>
                 <div class="full_name_input">
                         <input 
                             type="text" 
@@ -57,9 +59,9 @@
                             maxlength="16"
                             placeholder="New password">
                     </div>
-                    <p>Birthday</p>
-                    <div>
-                        <select id="birthday_id" name="birthday">
+                    <p class="h2">Birthday</p>
+                    <div id="birthday">
+                        <select id="month_id" name="birthday">
                             <option value="none" disabled selected>
                                 Month
                             </option>
@@ -76,7 +78,7 @@
                             <option value="nov">Nov</option>
                             <option value="dec">Dec</option>
                         </select>
-                        <select id="birthday_id" name="birthday">
+                        <select id="day_id" name="birthday">
                             <option value="none" disabled selected>
                                 Day
                             </option>
@@ -112,7 +114,7 @@
                             <option value="30">30</option>
                             <option value="31">31</option>
                         </select>
-                        <select id="birthday_id" name="birthday">
+                        <select id="year_id" name="birthday">
                             <option value="none" disabled selected>
                                 Year
                             </option>
@@ -191,32 +193,35 @@
                             <option value="1951">1951</option>
                             <option value="1950">1950</option>
                         </select>
+                    </div> 
+                    <p class="h2">Gender</p>
+                        <div id="gender">
+                            <div>
+                            <a href="#" class="gender">   
+                                <label for="male_radio">Male</label>
+                                <input type="radio" id="male_radio" name="program" value="male">
+                            </a>
+                            <a href="#" class="gender">
+                                <label for="female_radio">Female</label>
+                                <input type="radio" id="female_radio" name="program" value="female">
+                            </a> 
+                            <a href="#" class="gender">
+                                <label for="custom_radio">Custom</label>
+                                <input type="radio" id="custom_radio" name="program" value="custom">
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <p>Gender</p>
-                        <div>
-                            <label for="male_radio">Male</label>
-                            <input type="radio" id="male_radio" name="program" value="male">
-                            
-                            <label for="female_radio">Female</label>
-                            <input type="radio" id="female_radio" name="program" value="female">
-                            
-                            <label for="custom_radio">Custom</label>
-                            <input type="radio" id="custom_radio" name="program" value="custom">
-                        </div> 
-                    </div>
-                    <div>
+                    <div class="small_footer">
                         <p>People who used our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a></p>
                         <p>By click Sign Up, you agree to our <a href="#">Terms, Privacy Policy and Cookies Policy.</a> You may recieve SMS Notifications from us and you can opt out at any time. </p>
                     </div>
-                    <div>
+                    <div class="button">
                         <input type="submit" value="Sign Up">
                     </div>
-                    <div>
-                        <a href="#">Already have an account</a>
+                    <div class="account">
+                        <a href="#">Already have an account?</a>
                     </div>
-                </main>
-            </section>
-        </form>
+            </form> 
+        </main>
     </body>
 </html>

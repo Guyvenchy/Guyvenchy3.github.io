@@ -6,24 +6,172 @@
 }
 body {
     background-color: #f1f2f5;
+    font-family: 'Work Sans', sans-serif;
 }
-
-#grid_container {
-    display: grid;
-    grid-template-columns: 1fr 600px 1fr;
-    grid-template-areas: 
-        ". header_area ."
-        ". main_area .";
-    background-color:white;
+.header {
+    margin-top: 0px auto;
+    margin-bottom: auto;
 }
-header {
-    grid-area: header_area;
+.header_1 {
+    color: #6a6f76;
+    font-family: 'Work Sans', sans-serif;
+    padding-top: 0px auto;
+}
+.h2 {
+    color: #6a6f76;
+    padding-top: 0px;
+}
+form {
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px lightgray;
+}
+header { 
     text-align: center;
 }
 main {
-    grid-area: main_area;
+    text-align: center;
 }
-.full_name_input label {
-    display: block;
-    
+
+.full_name_input,
+.email_input,
+.password_input {
+    display: flex;
 }
+.full_name_input,
+.email_input,
+.password_input {
+    flex: 1;
+    padding: 5px;
+    justify-content: center;
+}
+
+#email_id,
+#password_id {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 36px;
+    width: 416px;
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+}
+#first_name_id {
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 10px;
+    height: 36px;
+    width: 200px;
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+}
+#last_name_id {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 36px;
+    width: 200px;
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+}
+div #month_id:hover {
+    border-color:  black;
+}
+#month_id {
+    width: 130px;
+    height: 35px;
+    border-color:  #d8dadf;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: px;
+}
+div #year_id:hover {
+    border-color:  black;
+}
+#year_id {
+    width: 130px;
+    height: 35px;
+    border-color:  #d8dadf;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: px;
+}
+div #day_id:hover {
+    border-color:  black;
+}
+#day_id {
+    width: 130px;
+    height: 35px;
+    border-color:  #d8dadf;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.h1 div:hover {
+    border-color: 1px solid black;
+}
+.gender {
+    color: black;
+    border: 1px solid #d8dadf;
+    border-radius: 4px;
+    padding: 8px 25px 8px;
+    margin: 2px;
+}
+.gender:hover{
+    border: 1px solid black;
+}
+.small_footer{
+    font-size: 12px;
+    width: 60%;
+    margin-left: 20%;
+    color: #858585;
+    padding-top: 10px;
+}
+div a { 
+    text-decoration: none;
+    color: #1877f2;
+}
+.account{
+    font-size: 20px;
+    padding-bottom: 24px;
+}
+.button {
+    padding-top: 0px;
+}
+.button input {
+    width: 13pc;
+    height: 2.4pc;
+    text-align: center;
+    font-size: larger;
+    border-radius: 8px;
+    background: rgb(1,164,2);
+    color: white;
+    cursor: pointer;
+    margin: 5%;
+}
+.button input:hover {
+    background: rgb(1, 189, 1);
+}
+/* Desktop breakpoint*/
+@media screen and (min-width: 1280px) {
+    #tablet,
+    #mobile {
+        display: none;
+    }
+}
+/* Tablet breakpoint */
+@media screen and (max-width: 1279px)
+    and (min-width: 768px) {
+        #desktop,
+        #mobile {
+            display: none;
+        }
+    }
+/* Mobile breakpoint */
+    @media screen and (max-width: 767px) {
+        #desktop,
+        #tablet {
+            display: none;
+        }
+    }

@@ -146,7 +146,8 @@ footer ul {
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-    margin: 0 auto 15px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0;
     position: relative;
     text-indent: none;
